@@ -9,7 +9,7 @@
               <img src="<%= item.image_url %>" alt="">
             </div>
             <div class="panel-body">
-              <p class="buttons text-center"></p>
+              <p class="item-title"><%= link_to item.name,item %></p>
                 <div class="buttons text-center">
                   <% if logged_in? %>
                     <%= render 'ownerships/want_button',item: item %>
