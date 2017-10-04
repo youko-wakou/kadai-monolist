@@ -1,6 +1,6 @@
 <div class="user-profile">
   <div class="icon text-center">
-    <img src="<%= gravatar_url(@user,size: 100 %>" alt="" class="img-circle">
+    <img src="<%= gravatar_url(@user,size: 100)%>" alt="" class="img-circle">
     
   </div>
   <div class="name text-center">
@@ -16,11 +16,11 @@
       </li>
       <li>
         <div class="status-label">HAVE</div>
-        <div id="have_count" class="stauts-value">
-          xxxxxx
+        <div id="have_count" class="status-value">
+          <%= @count_have %>
         </div>
       </li>
     </ul>
   </div>
 </div>
-<%= render 'items/items',items: @items %>
+<%= render 'items/items', items: @items %>
