@@ -35,6 +35,6 @@ class OwnershipsController < ApplicationController
       flash[:success] = '商品のHaveを解除しました'
     end
     
-    redirect_back(fallback_location: root_path)
+    redirect_back(fallback_location: toppages_index_path)
   end
 end
