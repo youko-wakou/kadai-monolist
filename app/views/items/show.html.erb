@@ -10,7 +10,7 @@
           <div class="buttons text-center">
             <% if logged_in? %>
               <%= render 'ownerships/want_button',item: @item %>
-              <%= render 'ownerships/have_button' item: @item %>
+              <%= render 'ownerships/have_button', item: @item %>
             <% end %>
           </div>
         </div>
@@ -42,6 +42,6 @@
         </div>
       </div>
     </div>
-    <p class="text-center"><%= link_to '楽天詳細ページ,@item.url,target: '_blank' %></p>
+    <p class="text-center"><%= link_to '楽天詳細ページ',@item.url,target: '_blank' %></p>
   </div>
 </div>
